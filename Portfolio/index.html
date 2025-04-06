@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio</title>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+    }
+body {
+ height: 100vh;
+ background-position: center;
+ padding: 20px;
+    }
+
+    .container {
+      position: relative;
+      height: 100%;
+      background-color: #007BFF;
+      border-radius: 30px;
+    }
+
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 25px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 25px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .navbar a {
+      font-size: 18px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 35px;
+      border-bottom: 2px solid transparent;
+      transition: 0.3s ease;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      border-color: #fff;
+    }
+
+    .hero {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 120px 5% 0;
+      color: #fff;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 60px;
+      font-weight: 700;
+      color: #ccc;
+      transform: translateY(-20px);
+      opacity: 0;
+      animation: slideIn 1s ease forwards;
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      margin: 20px 0;
+      transform: translateY(20px);
+      opacity: 0;
+      animation: slideUp 1s ease forwards;
+      animation-delay: 0.4s;
+    }
+
+    .hero h2 span {
+      color: #c0392b;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+      opacity: 0;
+      animation: fadeButtons 1s ease forwards;
+      animation-delay: 0.8s;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: 0.3s ease;
+    }
+
+    .btn.github {
+      background: #fff;
+      color: #000;
+    }
+
+    .btn.github:hover {
+      background: #ddd;
+    }
+
+    .btn.resume {
+      background: #c0392b;
+      color: #fff;
+    }
+
+    .btn.resume:hover {
+      background: #a93226;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeButtons {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="#" class="logo">portfolio.</a>
+      <nav class="navbar">
+        <a href="index.html" class="active">home</a>
+        <a href="aboutnew.html">about</a>
+  <a href="newres.html">Resume</a>
+
+       
+        <a href="project.html">project</a>
+        <a href="Contact.html">contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>THEJ KRISHNAN</h1>
+      <h2>B.Tech CSE Student | Aspiring AI/ML Developer</h2>
+      <div class="buttons">
+        <a href="https://github.com/yourprofile" class="btn github">
+          <i class="ri-github-fill"></i> Github
+        </a>
+        <a href="aboutnew.html" class="btn resume">Recruit me</a>
+      </div>
+    </section>
+  </div>
+ <footer style="text-align: center;">
+  <p>© 2025 Thej Krishnan | 
+    <a href="Contact.html" style="color: black; text-decoration: underline;">
+     Contact 
+    </a>
+  </p>
+</footer>
+
+</body>
+</html>
+
+</body>
+</html>
+

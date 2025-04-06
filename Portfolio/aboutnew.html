@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me - Thej Krishnan</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #007BFF;
+      color: #333;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      transition: all 0.4s ease;
+      animation: fadeInTop 1s ease-out;
+    }
+
+    header h1, header p {
+      margin: 0;
+      opacity: 0;
+      animation: slideDown 0.8s ease forwards;
+    }
+
+    header p {
+      animation-delay: 0.4s;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .container:hover {
+      transform: translateY(-5px);
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+      transition: color 0.3s ease;
+    }
+
+    h1:hover, h2:hover {
+      color: #0056b3;
+    }
+
+    p, li {
+      line-height: 1.6;
+      transition: opacity 0.3s ease;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
+      transition: color 0.3s ease;
+}
+    @keyframes fadeInTop {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Thej Krishnan</h1>
+    <p>B.Tech CSE Student | Aspiring AI/ML Developer</p>
+  </header>
+
+  <div class="container">
+    <h2>About Me</h2>
+    <p>Hi! I'm Thej Krishnan, a passionate and curious Computer Science Engineering student currently studying at Amrita Vishwa Vidyapeetham (Amrita University). I have a strong interest in Artificial Intelligence and Machine Learning, and I love exploring how technology can solve real-world problems and create meaningful impact.
+
+I enjoy building clean, user-friendly websites and applications, and I’m always eager to learn—whether it's diving into a new programming language, exploring AI algorithms, or improving my design skills. My goal is to grow into a well-rounded developer who combines technical knowledge with creativity and purpose.
+
+When I’m not coding or studying, you’ll often find me reading up on emerging tech trends, working on personal projects, or refining my portfolio</p><a href="newres.html" target="_blank" noreferrer">
+  <button >    View My Resume
+  </button>
+</a>
+
+
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>Java</li>
+      <li>Python</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p><a href="index.html">← Back to Portfolio</a><br>© 2025 Thej Krishnan</p>
+  </footer>
+</body>
+</html>
